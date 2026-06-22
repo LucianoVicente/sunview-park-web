@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Sunview Park Adventure Málaga</title>
+  <meta name="description" content="Contacta con Sunview Park Adventure en C. Comedias, 29130 Alhaurín de la Torre, Málaga. Formulario, mapa, teléfono y redes sociales.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================ NAVBAR ============================ -->
+  <header class="navbar">
+    <nav class="navbar__inner" aria-label="Navegación principal">
+      <a href="index.html" class="navbar__logo" aria-label="Sunview Park - Inicio">
+        <img src="images/logo.png" alt="Sunview Park Adventure">
+      </a>
+      <ul class="navbar__links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="packs.html">Packs</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li class="navbar__cta">
+          <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
+          <a href="#entradas" class="btn btn--ticket">Comprar entradas</a>
+        </li>
+        <li class="navbar__lang"><a href="contacto.html" class="active">ES</a><span>|</span><a href="en/contact.html">EN</a></li>
+      </ul>
+      <button class="navbar__toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero hero--inner" style="background-image: url('images/terraza.jpg');">
+    <div class="hero__content">
+      <span class="hero__eyebrow">Estamos a 20 km de Málaga</span>
+      <h1><span class="accent">Contacta</span> con nosotros</h1>
+      <p>¿Tienes dudas, quieres reservar o planear un evento? Escríbenos y te ayudamos encantados.</p>
+    </div>
+  </section>
+
+  <div class="ticket-strip">
+    🎟️ ¿Prefieres comprar online? · <a href="#entradas">Comprar entradas</a>
+  </div>
+
+  <!-- ===================== CONTACTO + FORMULARIO =================== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Datos de contacto -->
+        <div class="reveal">
+          <div class="section-head" style="text-align:left;margin:0 0 30px;">
+            <span class="eyebrow" style="display:block;">Información</span>
+            <h2 style="font-size:1.9rem;">Hablemos</h2>
+          </div>
+          <ul class="contact-info">
+            <li>
+              <span class="ci-icon">📍</span>
+              <div>
+                <h4>Dirección</h4>
+                <p>C. Comedias, 29130<br>Alhaurín de la Torre, Málaga</p>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon">📞</span>
+              <div>
+                <h4>Teléfono</h4>
+                <!-- Sustituye por el número real de teléfono del parque -->
+                <p><a href="tel:+34000000000">+34 000 000 000</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon">✉️</span>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:info@sunviewpark.com">info@sunviewpark.com</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon">🚗</span>
+              <div>
+                <h4>Cómo llegar</h4>
+                <p>A solo 20 km de Málaga capital, con acceso en coche.</p>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon">📲</span>
+              <div>
+                <h4>Síguenos</h4>
+                <p>
+                  <a href="https://www.facebook.com/sunviewparkadventure" target="_blank" rel="noopener">Facebook</a> ·
+                  <a href="https://www.instagram.com/sunviewparkadventure" target="_blank" rel="noopener">Instagram</a>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Formulario -->
+        <div class="reveal">
+          <form class="form" id="contact-form" novalidate>
+            <div class="form__row form__row--2">
+              <div>
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+              </div>
+              <div>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="tucorreo@email.com" required>
+              </div>
+            </div>
+
+            <div class="form__row form__row--2">
+              <div>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="600 000 000">
+              </div>
+              <div>
+                <label for="asunto">Asunto</label>
+                <select id="asunto" name="asunto">
+                  <option value="">Selecciona una opción</option>
+                  <option>Reserva de entradas</option>
+                  <option>Despedida de soltero/a</option>
+                  <option>Evento de empresa</option>
+                  <option>Boda</option>
+                  <option>Grupo escolar</option>
+                  <option>Restaurante</option>
+                  <option>Otros</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div>
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué necesitas..." required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">Enviar mensaje</button>
+            <p class="form__note">* Campos obligatorios. Responderemos lo antes posible.</p>
+
+            <div class="form-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= MAPA ============================ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Dónde estamos</span>
+        <h2>Encuéntranos</h2>
+        <p>C. Comedias, 29130 Alhaurín de la Torre, Málaga · a 20 km de Málaga capital.</p>
+      </div>
+      <div class="reveal">
+        <!-- Embed de Google Maps centrado en Alhaurín de la Torre -->
+        <iframe
+          class="map-embed"
+          src="https://www.google.com/maps?q=Alhaur%C3%ADn%20de%20la%20Torre%2C%20M%C3%A1laga&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+          title="Ubicación de Sunview Park Adventure en Alhaurín de la Torre, Málaga"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== BANDA CTA / ENTRADAS (Turitop) ============= -->
+  <section class="cta-band" id="entradas">
+    <div class="container">
+      <h2>Compra tus entradas</h2>
+      <p>Reserva online de forma rápida y segura y vive la aventura en Sunview Park.</p>
+      <div class="turitop-box">
+        <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
+        <p><strong>Sistema de venta de entradas</strong><br>
+        Aquí se integrará el widget de reservas Turitop.</p>
+        <a href="https://sunviewpark.com" class="btn btn--ticket btn--lg" style="margin-top:16px;">Comprar entradas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo"><img src="images/logo.png" alt="Sunview Park Adventure"></div>
+          <p>El parque de aventuras más grande de Málaga. Tirolina, naturaleza, gastronomía y mucha diversión a 20 km de la ciudad.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/sunviewparkadventure" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6v1.8h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/sunviewparkadventure" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .4 1.4.9.5.4.7.8.9 1.4.1.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.4 1-.9 1.4-.4.5-.8.7-1.4.9-.4.1-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.4-1.4-.9-.5-.4-.7-.8-.9-1.4-.1-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.4-1 .9-1.4.4-.5.8-.7 1.4-.9.4-.1 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.2.8-.4.3-.6.7-.8 1.2-.2.4-.3 1-.4 2.1C2.7 9.8 2.7 10.2 2.7 12s0 2.2.1 3.4c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.2.3.4.7.6 1.2.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.2-.8.4-.3.6-.7.8-1.2.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-3.4s0-2.2-.1-3.4c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.2-.3-.4-.7-.6-1.2-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 8.1a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4zm6.2-8.3a1.1 1.1 0 1 1-2.3 0 1.1 1.1 0 0 1 2.3 0z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>Enlaces</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="packs.html">Packs</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Actividades</h4>
+          <ul class="footer__links">
+            <li><a href="actividades.html#tirolina">Tirolina</a></li>
+            <li><a href="actividades.html#arco">Tiro con arco</a></li>
+            <li><a href="actividades.html#discgolf">Disc Golf</a></li>
+            <li><a href="actividades.html#caballo">Rutas a caballo</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <p>📍 C. Comedias, 29130<br>Alhaurín de la Torre, Málaga</p>
+          <p style="margin-top:12px;"><a href="contacto.html">Cómo llegar →</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        © <span data-year>2026</span> Sunview Park Adventure · Alhaurín de la Torre, Málaga · Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

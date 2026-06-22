@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunview Park Adventure | El parque de aventuras más grande de Málaga</title>
+  <meta name="description" content="Sunview Park Adventure en Alhaurín de la Torre, Málaga. Vive la tirolina más larga de Andalucía (1.350 m), tiro con arco, disc golf, rutas a caballo y eventos. ¡Compra tus entradas!">
+
+  <!-- Tipografía Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================ NAVBAR ============================ -->
+  <header class="navbar">
+    <nav class="navbar__inner" aria-label="Navegación principal">
+      <a href="index.html" class="navbar__logo" aria-label="Sunview Park - Inicio">
+        <img src="images/logo.png" alt="Sunview Park Adventure">
+      </a>
+
+      <ul class="navbar__links" id="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="packs.html">Packs</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li class="navbar__cta">
+          <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
+          <a href="#entradas" class="btn btn--ticket">Comprar entradas</a>
+        </li>
+        <li class="navbar__lang"><a href="index.html" class="active">ES</a><span>|</span><a href="en/index.html">EN</a></li>
+      </ul>
+
+      <button class="navbar__toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero" style="background-image: url('images/tirolina-sunview-park.jpg');">
+    <div class="hero__content">
+      <span class="hero__eyebrow">Alhaurín de la Torre · Málaga</span>
+      <h1>El parque de aventuras <span class="accent">más grande</span> de Málaga</h1>
+      <p>Vuela en la tirolina más larga de Andalucía, a 100 km/h y 190 m de altitud, con vistas panorámicas que te quitarán el aliento.</p>
+      <div class="hero__actions">
+        <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
+        <a href="#entradas" class="btn btn--ticket btn--lg">Comprar entradas</a>
+        <a href="actividades.html" class="btn btn--outline btn--lg">Ver actividades</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat"><strong>1.350 m</strong><span>de tirolina</span></div>
+        <div class="hero__stat"><strong>100 km/h</strong><span>de velocidad</span></div>
+        <div class="hero__stat"><strong>190 m</strong><span>de altitud</span></div>
+        <div class="hero__stat"><strong>20 km</strong><span>de Málaga</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Franja de entradas -->
+  <div class="ticket-strip">
+    🎟️ Reserva online y asegura tu plaza · <a href="#entradas">Comprar entradas</a>
+  </div>
+
+  <!-- ====================== INTRO / BIENVENIDA ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="feature reveal">
+        <div class="feature__media">
+          <img src="images/grupo-tirolina.png" alt="Grupo de amigos disfrutando de la experiencia en Sunview Park">
+        </div>
+        <div class="feature__body">
+          <span class="eyebrow" style="color:var(--color-teal-dark);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.8rem;">Bienvenido</span>
+          <h3 class="underline-accent">Aventura, naturaleza y adrenalina en estado puro</h3>
+          <p>Sunview Park Adventure es el mayor parque de aventuras de la provincia de Málaga. A solo 20 km de la ciudad, en plena naturaleza, te esperan actividades para todas las edades y niveles de emoción.</p>
+          <ul class="feature__list">
+            <li>La tirolina más larga de Andalucía y 2ª de España</li>
+            <li>Actividades para familias, grupos y empresas</li>
+            <li>Restaurante y terraza con vistas panorámicas</li>
+          </ul>
+          <a href="actividades.html" class="btn btn--primary">Descubre las actividades</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACTIVIDADES DESTACADAS =================== -->
+  <section class="section section--alt" id="actividades">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Qué puedes hacer</span>
+        <h2>Actividades destacadas</h2>
+        <p>Vive la emoción a tu manera: desde el vértigo de la tirolina hasta la calma de una ruta a caballo.</p>
+      </div>
+
+      <div class="cards cards--4">
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="images/joven-tirolina-Alhaurin-Torre_1574253138_138567878_667x375.jpeg" alt="Persona lanzándose en la tirolina de Sunview Park sobre el valle">
+            <span class="card__tag">Estrella</span>
+          </div>
+          <div class="card__body">
+            <h3>Tirolina 1.350 m</h3>
+            <p>La más larga de Andalucía. Vuela a 100 km/h sobre el valle a 190 m de altitud.</p>
+            <a href="actividades.html#tirolina" class="btn btn--teal">Más info</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="images/arco.png" alt="Tiro con arco en Sunview Park">
+          </div>
+          <div class="card__body">
+            <h3>Tiro con arco</h3>
+            <p>Pon a prueba tu puntería y concentración con monitores especializados.</p>
+            <a href="actividades.html#arco" class="btn btn--teal">Más info</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="images/disc-golf.jpg" alt="Disc Golf en Sunview Park">
+          </div>
+          <div class="card__body">
+            <h3>Disc Golf</h3>
+            <p>Un recorrido divertido en plena naturaleza, ideal para grupos y familias.</p>
+            <a href="actividades.html#discgolf" class="btn btn--teal">Más info</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="images/caballo.jpg" alt="Rutas a caballo en Sunview Park">
+          </div>
+          <div class="card__body">
+            <h3>Rutas a caballo</h3>
+            <p>Descubre los senderos del entorno natural a lomos de nuestros caballos.</p>
+            <a href="actividades.html#caballo" class="btn btn--teal">Más info</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== EVENTOS RÁPIDOS ======================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Celebra con nosotros</span>
+        <h2>Eventos y grupos</h2>
+        <p>El escenario perfecto para tu próxima celebración, con vistas de infarto y diversión garantizada.</p>
+      </div>
+
+      <div class="icon-cards">
+        <div class="icon-card reveal">
+          <span class="icon">🎉</span>
+          <h3>Despedidas</h3>
+          <p>De soltero y soltera con adrenalina y mucha diversión.</p>
+        </div>
+        <div class="icon-card reveal">
+          <span class="icon">💼</span>
+          <h3>Empresas</h3>
+          <p>Team building y eventos corporativos a medida.</p>
+        </div>
+        <div class="icon-card reveal">
+          <span class="icon">💍</span>
+          <h3>Bodas</h3>
+          <p>Un "sí, quiero" inolvidable al atardecer.</p>
+        </div>
+        <div class="icon-card reveal">
+          <span class="icon">🎒</span>
+          <h3>Colegios</h3>
+          <p>Excursiones educativas y de aventura para grupos escolares.</p>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top:36px;">
+        <a href="eventos.html" class="btn btn--primary btn--lg">Ver todos los eventos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESTAURANTE / TERRAZA =================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="feature feature--reverse reveal">
+        <div class="feature__media">
+          <img src="images/restaurante.png" alt="Gastronomía y tapas en el restaurante de Sunview Park">
+        </div>
+        <div class="feature__body">
+          <h3 class="underline-accent">Restaurante y terraza panorámica</h3>
+          <p>Después de la aventura, recarga energías en nuestro restaurante con terraza y unas vistas únicas del valle de Málaga. Cocina para todos los gustos en un ambiente relajado al aire libre.</p>
+          <ul class="feature__list">
+            <li>Terraza con vistas panorámicas</li>
+            <li>Ideal para familias y grupos</li>
+            <li>Perfecto para rematar un día de aventura</li>
+          </ul>
+          <a href="contacto.html" class="btn btn--teal">Reserva tu mesa</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== BANDA CTA / ENTRADAS (Turitop) ============= -->
+  <section class="cta-band" id="entradas">
+    <div class="container">
+      <h2>¿List@ para la aventura?</h2>
+      <p>Compra tus entradas online de forma rápida y segura. ¡Las plazas vuelan tan rápido como tú en la tirolina!</p>
+
+      <!-- Caja del widget de venta de entradas -->
+      <div class="turitop-box">
+        <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
+        <p><strong>Sistema de venta de entradas</strong><br>
+        Aquí se integrará el widget de reservas Turitop.</p>
+        <a href="https://sunviewpark.com" class="btn btn--ticket btn--lg" style="margin-top:16px;">Comprar entradas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo"><img src="images/logo.png" alt="Sunview Park Adventure"></div>
+          <p>El parque de aventuras más grande de Málaga. Tirolina, naturaleza, gastronomía y mucha diversión a 20 km de la ciudad.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/sunviewparkadventure" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6v1.8h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/sunviewparkadventure" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .4 1.4.9.5.4.7.8.9 1.4.1.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.4 1-.9 1.4-.4.5-.8.7-1.4.9-.4.1-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.4-1.4-.9-.5-.4-.7-.8-.9-1.4-.1-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.4-1 .9-1.4.4-.5.8-.7 1.4-.9.4-.1 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.2.8-.4.3-.6.7-.8 1.2-.2.4-.3 1-.4 2.1C2.7 9.8 2.7 10.2 2.7 12s0 2.2.1 3.4c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.2.3.4.7.6 1.2.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.2-.8.4-.3.6-.7.8-1.2.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-3.4s0-2.2-.1-3.4c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.2-.3-.4-.7-.6-1.2-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 8.1a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4zm6.2-8.3a1.1 1.1 0 1 1-2.3 0 1.1 1.1 0 0 1 2.3 0z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Enlaces</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="packs.html">Packs</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Actividades</h4>
+          <ul class="footer__links">
+            <li><a href="actividades.html#tirolina">Tirolina</a></li>
+            <li><a href="actividades.html#arco">Tiro con arco</a></li>
+            <li><a href="actividades.html#discgolf">Disc Golf</a></li>
+            <li><a href="actividades.html#caballo">Rutas a caballo</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contacto</h4>
+          <p>📍 C. Comedias, 29130<br>Alhaurín de la Torre, Málaga</p>
+          <p style="margin-top:12px;"><a href="contacto.html">Cómo llegar →</a></p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        © <span data-year>2026</span> Sunview Park Adventure · Alhaurín de la Torre, Málaga · Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

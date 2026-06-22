@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunview Park Adventure | The biggest adventure park in Málaga</title>
+  <meta name="description" content="Sunview Park Adventure in Alhaurín de la Torre, Málaga. Ride the longest zip line in Andalusia (1,350 m), archery, disc golf, horse riding and events. Buy your tickets!">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <!-- ============================ NAVBAR ============================ -->
+  <header class="navbar">
+    <nav class="navbar__inner" aria-label="Main navigation">
+      <a href="index.html" class="navbar__logo" aria-label="Sunview Park - Home">
+        <img src="../images/logo.png" alt="Sunview Park Adventure">
+      </a>
+      <ul class="navbar__links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="packs.html">Packs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="navbar__cta">
+          <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
+          <a href="#tickets" class="btn btn--ticket">Buy tickets</a>
+        </li>
+        <li class="navbar__lang"><a href="../index.html">ES</a><span>|</span><a href="index.html" class="active">EN</a></li>
+      </ul>
+      <button class="navbar__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero" style="background-image: url('../images/tirolina-sunview-park.jpg');">
+    <div class="hero__content">
+      <span class="hero__eyebrow">Alhaurín de la Torre · Málaga</span>
+      <h1>The <span class="accent">biggest</span> adventure park in Málaga</h1>
+      <p>Fly on the longest zip line in Andalusia, at 100 km/h and 190 m high, with breathtaking panoramic views over the valley.</p>
+      <div class="hero__actions">
+        <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
+        <a href="#tickets" class="btn btn--ticket btn--lg">Buy tickets</a>
+        <a href="activities.html" class="btn btn--outline btn--lg">See activities</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat"><strong>1,350 m</strong><span>zip line</span></div>
+        <div class="hero__stat"><strong>100 km/h</strong><span>top speed</span></div>
+        <div class="hero__stat"><strong>190 m</strong><span>altitude</span></div>
+        <div class="hero__stat"><strong>20 km</strong><span>from Málaga</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticket-strip">
+    🎟️ Book online and secure your spot · <a href="#tickets">Buy tickets</a>
+  </div>
+
+  <!-- ====================== INTRO / WELCOME ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="feature reveal">
+        <div class="feature__media">
+          <img src="../images/grupo-tirolina.png" alt="Friends enjoying the experience at Sunview Park">
+        </div>
+        <div class="feature__body">
+          <span class="eyebrow" style="color:var(--color-teal-dark);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.8rem;">Welcome</span>
+          <h3 class="underline-accent">Adventure, nature and pure adrenaline</h3>
+          <p>Sunview Park Adventure is the largest adventure park in the province of Málaga. Just 20 km from the city, surrounded by nature, with activities for all ages and thrill levels.</p>
+          <ul class="feature__list">
+            <li>The longest zip line in Andalusia, 2nd longest in Spain</li>
+            <li>Activities for families, groups and companies</li>
+            <li>Restaurant and terrace with panoramic views</li>
+          </ul>
+          <a href="activities.html" class="btn btn--primary">Discover the activities</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURED ACTIVITIES =================== -->
+  <section class="section section--alt" id="activities">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">What you can do</span>
+        <h2>Featured activities</h2>
+        <p>Experience the thrill your way: from the rush of the zip line to a peaceful horse ride.</p>
+      </div>
+
+      <div class="cards cards--4">
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="../images/joven-tirolina-Alhaurin-Torre_1574253138_138567878_667x375.jpeg" alt="Person riding the zip line at Sunview Park">
+            <span class="card__tag">Star ride</span>
+          </div>
+          <div class="card__body">
+            <h3>1,350 m Zip Line</h3>
+            <p>The longest in Andalusia. Fly at 100 km/h over the valley, 190 m high.</p>
+            <a href="activities.html#zipline" class="btn btn--teal">Learn more</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="../images/arco.png" alt="Archery at Sunview Park">
+          </div>
+          <div class="card__body">
+            <h3>Archery</h3>
+            <p>Test your aim and focus with our specialised instructors.</p>
+            <a href="activities.html#archery" class="btn btn--teal">Learn more</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="../images/disc-golf.jpg" alt="Disc Golf at Sunview Park">
+          </div>
+          <div class="card__body">
+            <h3>Disc Golf</h3>
+            <p>A fun course surrounded by nature, ideal for groups and families.</p>
+            <a href="activities.html#discgolf" class="btn btn--teal">Learn more</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="../images/caballo.jpg" alt="Horse riding at Sunview Park">
+          </div>
+          <div class="card__body">
+            <h3>Horse Riding</h3>
+            <p>Discover the natural trails of the area on horseback.</p>
+            <a href="activities.html#horse" class="btn btn--teal">Learn more</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== QUICK EVENTS ======================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Celebrate with us</span>
+        <h2>Events & groups</h2>
+        <p>The perfect setting for your next celebration, with stunning views and guaranteed fun.</p>
+      </div>
+
+      <div class="icon-cards">
+        <div class="icon-card reveal"><span class="icon">🎉</span><h3>Stag & Hen</h3><p>Stag and hen parties full of adrenaline and fun.</p></div>
+        <div class="icon-card reveal"><span class="icon">💼</span><h3>Companies</h3><p>Team building and custom corporate events.</p></div>
+        <div class="icon-card reveal"><span class="icon">💍</span><h3>Weddings</h3><p>An unforgettable "I do" at sunset.</p></div>
+        <div class="icon-card reveal"><span class="icon">🎒</span><h3>Schools</h3><p>Educational and adventure trips for school groups.</p></div>
+      </div>
+
+      <div class="text-center" style="margin-top:36px;">
+        <a href="events.html" class="btn btn--primary btn--lg">See all events</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESTAURANT / TERRACE =================== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="feature feature--reverse reveal">
+        <div class="feature__media">
+          <img src="../images/restaurante.png" alt="Food and tapas at the Sunview Park restaurant">
+        </div>
+        <div class="feature__body">
+          <h3 class="underline-accent">Restaurant & panoramic terrace</h3>
+          <p>After the adventure, recharge at our restaurant with terrace and unique views over the Málaga valley. Food for every taste in a relaxed open-air setting.</p>
+          <ul class="feature__list">
+            <li>Terrace with panoramic views</li>
+            <li>Ideal for families and groups</li>
+            <li>The perfect way to end a day of adventure</li>
+          </ul>
+          <a href="contact.html" class="btn btn--teal">Book a table</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== CTA BAND / TICKETS (Turitop) ============= -->
+  <section class="cta-band" id="tickets">
+    <div class="container">
+      <h2>Ready for the adventure?</h2>
+      <p>Buy your tickets online quickly and securely. Spots fly as fast as you do on the zip line!</p>
+
+      <div class="turitop-box">
+        <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
+        <p><strong>Ticketing system</strong><br>
+        The Turitop booking widget will be embedded here.</p>
+        <a href="https://sunviewpark.com" class="btn btn--ticket btn--lg" style="margin-top:16px;">Buy tickets</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__logo"><img src="../images/logo.png" alt="Sunview Park Adventure"></div>
+          <p>The biggest adventure park in Málaga. Zip line, nature, food and lots of fun, just 20 km from the city.</p>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/sunviewparkadventure" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6v1.8h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/sunviewparkadventure" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .4 1.4.9.5.4.7.8.9 1.4.1.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.4 1-.9 1.4-.4.5-.8.7-1.4.9-.4.1-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.4-1.4-.9-.5-.4-.7-.8-.9-1.4-.1-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.4-1 .9-1.4.4-.5.8-.7 1.4-.9.4-.1 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.2.8-.4.3-.6.7-.8 1.2-.2.4-.3 1-.4 2.1C2.7 9.8 2.7 10.2 2.7 12s0 2.2.1 3.4c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.2.3.4.7.6 1.2.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.2-.8.4-.3.6-.7.8-1.2.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-3.4s0-2.2-.1-3.4c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.2-.3-.4-.7-.6-1.2-.8-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 8.1a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4zm6.2-8.3a1.1 1.1 0 1 1-2.3 0 1.1 1.1 0 0 1 2.3 0z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="packs.html">Packs</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Activities</h4>
+          <ul class="footer__links">
+            <li><a href="activities.html#zipline">Zip Line</a></li>
+            <li><a href="activities.html#archery">Archery</a></li>
+            <li><a href="activities.html#discgolf">Disc Golf</a></li>
+            <li><a href="activities.html#horse">Horse Riding</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>📍 C. Comedias, 29130<br>Alhaurín de la Torre, Málaga</p>
+          <p style="margin-top:12px;"><a href="contact.html">Get directions →</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        © <span data-year>2026</span> Sunview Park Adventure · Alhaurín de la Torre, Málaga · All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>
