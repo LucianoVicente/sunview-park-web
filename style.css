@@ -296,7 +296,7 @@ ul { list-style: none; }
 
 /* Hero de inicio: foto más protagonista y mejor encuadre de la tirolina.
    Velo aún más ligero y degradado solo al pie (donde van datos y botones). */
-.hero--home { background-position: center 30%; }
+.hero--home { background-position: center 72%; }
 .hero--home::before {
   background: linear-gradient(180deg,
     rgba(15, 39, 66, 0.22) 0%,
@@ -773,8 +773,8 @@ ul { list-style: none; }
   /* Botones grandes un poco más contenidos */
   .btn--lg { padding: 15px 26px; font-size: 1.05rem; }
 
-  /* En vertical, sube el encuadre para que se vean los de la tirolina */
-  .hero--home { background-position: center 22%; }
+  /* En vertical, muestra la parte baja con las montañas */
+  .hero--home { background-position: center 72%; }
 
   /* Evita títulos demasiado grandes pegados a los bordes */
   .section-head h2 { font-size: clamp(1.6rem, 7vw, 2.1rem); }
