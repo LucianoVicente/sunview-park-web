@@ -288,10 +288,21 @@ ul { list-style: none; }
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(15, 39, 66, 0.55) 0%, rgba(15, 39, 66, 0.78) 100%);
+  /* Capa de contraste para el texto (más ligera = se ve más la foto) */
+  background: linear-gradient(180deg, rgba(15, 39, 66, 0.40) 0%, rgba(15, 39, 66, 0.62) 100%);
 }
 /* Variante hero interior (más baja) */
 .hero--inner { min-height: 62vh; }
+
+/* Hero de inicio: foto más protagonista y mejor encuadre de la tirolina.
+   Velo aún más ligero y degradado solo al pie (donde van datos y botones). */
+.hero--home { background-position: center 30%; }
+.hero--home::before {
+  background: linear-gradient(180deg,
+    rgba(15, 39, 66, 0.22) 0%,
+    rgba(15, 39, 66, 0.26) 42%,
+    rgba(15, 39, 66, 0.58) 100%);
+}
 
 .hero__content {
   position: relative;
@@ -313,7 +324,7 @@ ul { list-style: none; }
 .hero__content h1 {
   color: var(--color-white);
   font-size: clamp(2.2rem, 6vw, 4.4rem);
-  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45), 0 6px 28px rgba(0, 0, 0, 0.4);
   margin-bottom: 20px;
 }
 .hero__content h1 .accent { color: var(--color-gold); }
@@ -321,7 +332,7 @@ ul { list-style: none; }
   font-size: clamp(1.05rem, 2.4vw, 1.35rem);
   max-width: 640px;
   margin: 0 auto 34px;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5), 0 2px 16px rgba(0, 0, 0, 0.4);
 }
 .hero__actions {
   display: flex;
@@ -761,6 +772,9 @@ ul { list-style: none; }
 
   /* Botones grandes un poco más contenidos */
   .btn--lg { padding: 15px 26px; font-size: 1.05rem; }
+
+  /* En vertical, sube el encuadre para que se vean los de la tirolina */
+  .hero--home { background-position: center 22%; }
 
   /* Evita títulos demasiado grandes pegados a los bordes */
   .section-head h2 { font-size: clamp(1.6rem, 7vw, 2.1rem); }
