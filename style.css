@@ -610,6 +610,15 @@ ul { list-style: none; }
 }
 #redeemgv:hover { opacity: 0.8; }
 
+/* Botones de acción del bloque de entradas */
+.cta-band__actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
 /* ==================== 10. FORMULARIO CONTACTO ==================== */
 .contact-grid {
   display: grid;
