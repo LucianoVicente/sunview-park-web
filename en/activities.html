@@ -12,9 +12,6 @@
 
   <link rel="icon" type="image/png" href="../images/logo.png">
   <link rel="stylesheet" href="../style.css">
-
-  <!-- Turitop · online ticketing system -->
-  <script type="text/javascript" src="https://app.turitop.com/js/load-turitop.min.js" data-lang="en" data-company="S1143" data-ga="yes" data-afftag="ttafid"></script>
 </head>
 <body>
 
@@ -258,7 +255,7 @@
       <!-- Redeem a gift voucher (Turitop) -->
       <div class="cta-band__gift">
         <span>Got a gift voucher?</span>
-        <h1 id="redeemgv" data-lang="en" data-embed="redeemgv" data-service=" ">Redeem gift voucher</h1>
+        <h1 id="redeemgv" style="text-align:center;" data-lang="en" data-embed="redeemgv" data-service=" " data-category=" " data-version=" " data-datepickeravailability=" " data-servicename=" ">Redeem gift voucher</h1>
       </div>
     </div>
   </section>
@@ -313,5 +310,8 @@
   </footer>
 
   <script src="../main.js"></script>
+
+  <!-- Turitop · online ticketing (must load AFTER the body widgets) -->
+  <script type="text/javascript" id="js-turitop" src="https://app.turitop.com/js/load-turitop.min.js?ver=1.0.10" data-lang="en" data-company="S1143" data-ga="yes" data-afftag="ttafid"></script>
 </body>
 </html>

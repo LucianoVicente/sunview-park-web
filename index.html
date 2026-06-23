@@ -13,9 +13,6 @@
 
   <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="stylesheet" href="style.css">
-
-  <!-- Turitop · sistema de venta de entradas online -->
-  <script type="text/javascript" src="https://app.turitop.com/js/load-turitop.min.js" data-lang="es" data-company="S1143" data-ga="yes" data-afftag="ttafid"></script>
 </head>
 <body>
 
@@ -232,7 +229,7 @@
       <!-- Canjear un bono regalo (Turitop) -->
       <div class="cta-band__gift">
         <span>¿Tienes un bono regalo?</span>
-        <h1 id="redeemgv" data-lang="es" data-embed="redeemgv" data-service=" ">Canjear bono regalo</h1>
+        <h1 id="redeemgv" style="text-align:center;" data-lang="es" data-embed="redeemgv" data-service=" " data-category=" " data-version=" " data-datepickeravailability=" " data-servicename=" ">Canjear bono regalo</h1>
       </div>
     </div>
   </section>
@@ -291,5 +288,8 @@
   </footer>
 
   <script src="main.js"></script>
+
+  <!-- Turitop · venta de entradas online (debe cargar DESPUÉS de los widgets del body) -->
+  <script type="text/javascript" id="js-turitop" src="https://app.turitop.com/js/load-turitop.min.js?ver=1.0.10" data-lang="es" data-company="S1143" data-ga="yes" data-afftag="ttafid"></script>
 </body>
 </html>
