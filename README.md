@@ -10,7 +10,7 @@ Sitio web estático, **bilingüe (ES/EN)** y totalmente **responsive** para *Sun
 - 📱 **Mobile-first y responsive** — menú hamburguesa, rejillas fluidas y layouts a ancho completo.
 - 🎨 **Sistema de diseño con variables CSS** — toda la paleta (extraída del logo) se controla desde `:root`, fácil de re-tematizar.
 - ⚡ **JavaScript vanilla** — menú móvil, scroll suave, animaciones *reveal* al hacer scroll (IntersectionObserver) y validación del formulario de contacto.
-- 🎟️ **Preparado para Turitop** — botones de "Comprar entradas" y huecos marcados para el widget de ticketing.
+- 🎟️ **Integrado con Turitop** — venta de entradas online (widget embebido) y canje de bonos regalo en cada página.
 - 🗺️ Formulario de contacto + mapa de Google embebido.
 - ♿ Buenas prácticas de accesibilidad (etiquetas ARIA, textos alternativos, `prefers-reduced-motion`).
 
@@ -55,7 +55,7 @@ python -m http.server 8000
 
 ## 📝 Notas
 
-- El widget de venta de entradas (**Turitop**) está marcado con comentarios `<!-- WIDGET TURITOP -->` listos para pegar el código de integración.
+- El widget de venta de entradas (**Turitop**) está integrado en la sección "Comprar entradas" de cada página (script en el `<head>`, widget `box` y botón de canje de bono regalo).
 - El teléfono y el email del formulario son provisionales y deben sustituirse por los reales.
 
 ---

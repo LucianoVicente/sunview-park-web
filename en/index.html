@@ -12,6 +12,9 @@
 
   <link rel="icon" type="image/png" href="../images/logo.png">
   <link rel="stylesheet" href="../style.css">
+
+  <!-- Turitop · online ticketing system -->
+  <script type="text/javascript" src="https://app.turitop.com/js/load-turitop.min.js" data-lang="en" data-company="S1143" data-ga="yes" data-afftag="ttafid"></script>
 </head>
 <body>
 
@@ -28,7 +31,6 @@
         <li><a href="events.html">Events</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li class="navbar__cta">
-          <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
           <a href="#tickets" class="btn btn--ticket">Buy tickets</a>
         </li>
         <li class="navbar__lang"><a href="../index.html">ES</a><span>|</span><a href="index.html" class="active">EN</a></li>
@@ -45,7 +47,6 @@
       <h1>The <span class="accent">biggest</span> adventure park in Málaga</h1>
       <p>Fly on the longest zip line in Andalusia, at 100 km/h and 190 m high, with breathtaking panoramic views over the valley.</p>
       <div class="hero__actions">
-        <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
         <a href="#tickets" class="btn btn--ticket btn--lg">Buy tickets</a>
         <a href="activities.html" class="btn btn--outline btn--lg">See activities</a>
       </div>
@@ -203,10 +204,14 @@
       <p>Buy your tickets online quickly and securely. Spots fly as fast as you do on the zip line!</p>
 
       <div class="turitop-box">
-        <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
-        <p><strong>Ticketing system</strong><br>
-        The Turitop booking widget will be embedded here.</p>
-        <a href="https://sunviewpark.com" class="btn btn--ticket btn--lg" style="margin-top:16px;">Buy tickets</a>
+        <!-- Turitop ticketing widget -->
+        <div class="load-turitop" data-service="P1" data-lang="en" data-embed="box"></div>
+      </div>
+
+      <!-- Redeem a gift voucher (Turitop) -->
+      <div class="cta-band__gift">
+        <span>Got a gift voucher?</span>
+        <h1 id="redeemgv" data-lang="en" data-embed="redeemgv" data-service=" ">Redeem gift voucher</h1>
       </div>
     </div>
   </section>

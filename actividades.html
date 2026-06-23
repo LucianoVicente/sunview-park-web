@@ -12,6 +12,9 @@
 
   <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Turitop · sistema de venta de entradas online -->
+  <script type="text/javascript" src="https://app.turitop.com/js/load-turitop.min.js" data-lang="es" data-company="S1143" data-ga="yes" data-afftag="ttafid"></script>
 </head>
 <body>
 
@@ -28,7 +31,6 @@
         <li><a href="eventos.html">Eventos</a></li>
         <li><a href="contacto.html">Contacto</a></li>
         <li class="navbar__cta">
-          <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
           <a href="#entradas" class="btn btn--ticket">Comprar entradas</a>
         </li>
         <li class="navbar__lang"><a href="actividades.html" class="active">ES</a><span>|</span><a href="en/activities.html">EN</a></li>
@@ -45,7 +47,6 @@
       <h1>Nuestras <span class="accent">actividades</span></h1>
       <p>Cuatro formas de vivir la aventura en el mayor parque de Málaga. Elige la tuya y prepárate para repetir.</p>
       <div class="hero__actions">
-        <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
         <a href="#entradas" class="btn btn--ticket btn--lg">Comprar entradas</a>
       </div>
     </div>
@@ -250,10 +251,14 @@
       <h2>Elige tu aventura y reserva</h2>
       <p>Compra tus entradas online de forma rápida y segura para cualquiera de nuestras actividades.</p>
       <div class="turitop-box">
-        <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
-        <p><strong>Sistema de venta de entradas</strong><br>
-        Aquí se integrará el widget de reservas Turitop.</p>
-        <a href="https://sunviewpark.com" class="btn btn--ticket btn--lg" style="margin-top:16px;">Comprar entradas</a>
+        <!-- Widget de venta de entradas Turitop -->
+        <div class="load-turitop" data-service="P1" data-lang="es" data-embed="box"></div>
+      </div>
+
+      <!-- Canjear un bono regalo (Turitop) -->
+      <div class="cta-band__gift">
+        <span>¿Tienes un bono regalo?</span>
+        <h1 id="redeemgv" data-lang="es" data-embed="redeemgv" data-service=" ">Canjear bono regalo</h1>
       </div>
     </div>
   </section>

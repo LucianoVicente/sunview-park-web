@@ -12,6 +12,9 @@
 
   <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Turitop · sistema de venta de entradas online -->
+  <script type="text/javascript" src="https://app.turitop.com/js/load-turitop.min.js" data-lang="es" data-company="S1143" data-ga="yes" data-afftag="ttafid"></script>
 </head>
 <body>
 
@@ -28,7 +31,6 @@
         <li><a href="eventos.html">Eventos</a></li>
         <li><a href="contacto.html" class="active">Contacto</a></li>
         <li class="navbar__cta">
-          <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
           <a href="#entradas" class="btn btn--ticket">Comprar entradas</a>
         </li>
         <li class="navbar__lang"><a href="contacto.html" class="active">ES</a><span>|</span><a href="en/contact.html">EN</a></li>
@@ -89,6 +91,7 @@
               <div>
                 <h4>Horario</h4>
                 <p>Miércoles a domingo · 11:00–19:00</p>
+                <p style="font-size:0.88rem;color:var(--color-text-soft);margin-top:4px;">Actividades: 11:00–14:00 y 16:00–18:30</p>
               </div>
             </li>
             <li>
@@ -190,10 +193,14 @@
       <h2>Compra tus entradas</h2>
       <p>Reserva online de forma rápida y segura y vive la aventura en Sunview Park.</p>
       <div class="turitop-box">
-        <!-- WIDGET TURITOP: pega aquí tu código de integración de Turitop -->
-        <p><strong>Sistema de venta de entradas</strong><br>
-        Aquí se integrará el widget de reservas Turitop.</p>
-        <a href="https://sunviewpark.com" class="btn btn--ticket btn--lg" style="margin-top:16px;">Comprar entradas</a>
+        <!-- Widget de venta de entradas Turitop -->
+        <div class="load-turitop" data-service="P1" data-lang="es" data-embed="box"></div>
+      </div>
+
+      <!-- Canjear un bono regalo (Turitop) -->
+      <div class="cta-band__gift">
+        <span>¿Tienes un bono regalo?</span>
+        <h1 id="redeemgv" data-lang="es" data-embed="redeemgv" data-service=" ">Canjear bono regalo</h1>
       </div>
     </div>
   </section>
