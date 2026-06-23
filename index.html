@@ -222,8 +222,10 @@
 
       <!-- Caja del widget de venta de entradas -->
       <div class="turitop-box">
-        <!-- Widget de venta de entradas Turitop -->
-        <div class="load-turitop" data-service="P1" data-lang="es" data-embed="box"></div>
+        <!-- Página de reservas de Turitop incrustada (robusto, no depende del loader) -->
+        <iframe src="https://app.turitop.com/booking/daily/S1143/es/allproductlist"
+                title="Reserva de entradas · Sunview Park"
+                loading="lazy" class="turitop-iframe"></iframe>
       </div>
 
       <!-- Canjear un bono regalo (Turitop) -->
