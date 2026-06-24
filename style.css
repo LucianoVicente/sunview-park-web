@@ -620,7 +620,7 @@ ul { list-style: none; }
 }
 
 /* === Botón flotante de WhatsApp (número de PRUEBA, cambiar por el real) === */
-.sv-contact {
+.whatsapp-fab {
   position: fixed;
   right: 22px;
   bottom: 22px;
@@ -635,26 +635,26 @@ ul { list-style: none; }
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.sv-contact svg { width: 34px; height: 34px; fill: #fff; }
-.sv-contact:hover { transform: scale(1.08); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.34); }
-.sv-contact::after {
+.whatsapp-fab svg { width: 34px; height: 34px; fill: #fff; }
+.whatsapp-fab:hover { transform: scale(1.08); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.34); }
+.whatsapp-fab::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  animation: sv-pulse 2.4s ease-out infinite;
+  animation: wa-pulse 2.4s ease-out infinite;
 }
-@keyframes sv-pulse {
+@keyframes wa-pulse {
   0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
   70%  { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
   100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
 @media (max-width: 600px) {
-  .sv-contact { width: 52px; height: 52px; right: 16px; bottom: 16px; }
-  .sv-contact svg { width: 30px; height: 30px; }
+  .whatsapp-fab { width: 52px; height: 52px; right: 16px; bottom: 16px; }
+  .whatsapp-fab svg { width: 30px; height: 30px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .sv-contact::after { animation: none; }
+  .whatsapp-fab::after { animation: none; }
 }
 
 /* ==================== 10. FORMULARIO CONTACTO ==================== */
