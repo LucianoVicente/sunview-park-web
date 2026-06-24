@@ -636,15 +636,19 @@ ul { list-style: none; }
   margin-top: 8px;
 }
 
-/* Packs combinados: cuadrícula con las imágenes-promo (info y precio van en la imagen) */
+/* Packs combinados: tarjetas-promo todas del mismo tamaño, centradas */
 .cards--promos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-  max-width: 880px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px;
+  max-width: 900px;
   margin: 0 auto;
 }
-.pack-promo { text-align: center; }
+.pack-promo {
+  flex: 0 1 268px;
+  text-align: center;
+}
 .pack-promo img {
   width: 100%;
   height: auto;
@@ -652,9 +656,9 @@ ul { list-style: none; }
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
 }
-.pack-promo .btn { margin-top: 16px; }
-@media (max-width: 700px) {
-  .cards--promos { grid-template-columns: 1fr; max-width: 440px; }
+.pack-promo .btn { margin-top: 14px; }
+@media (max-width: 600px) {
+  .pack-promo { flex-basis: 300px; }
 }
 
 /* === Botón flotante de WhatsApp (número de PRUEBA, cambiar por el real) === */
