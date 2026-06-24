@@ -308,6 +308,16 @@ ul { list-style: none; }
     rgba(15, 39, 66, 0.58) 100%);
 }
 
+/* Banner de Actividades: foto nítida (sin velo nublado) y tirolina centrada */
+.hero--activities { background-position: center 35%; }
+.hero--activities::before {
+  background: linear-gradient(180deg, rgba(15, 39, 66, 0.15) 0%, rgba(15, 39, 66, 0.42) 100%);
+}
+.hero--activities .hero__content h1,
+.hero--activities .hero__content p {
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+}
+
 .hero__content {
   position: relative;
   z-index: 2;
