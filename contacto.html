@@ -189,11 +189,16 @@
     <div class="container">
       <h2>Compra tus entradas</h2>
       <p>Reserva online de forma rápida y segura y vive la aventura en Sunview Park.</p>
-      <div class="cta-band__actions">
-        <a href="https://app.turitop.com/booking/daily/S1143/es/allproductlist" target="_blank" rel="noopener" class="btn btn--ticket btn--lg">Comprar entradas online ↗</a>
-        <a href="https://app.turitop.com/booking/daily/S1143/es/allproductlist" target="_blank" rel="noopener" class="btn btn--outline btn--lg">Canjear bono regalo ↗</a>
+      <!-- Calendario de venta de entradas Turitop · servicio P1 (Parque aventuras) -->
+      <div class="turitop-box">
+        <div class="load-turitop" data-service="P1" data-lang="es" data-embed="box"></div>
       </div>
-      <p style="margin-top:20px;font-size:0.9rem;opacity:0.85;">Reservas seguras gestionadas por Turitop. ¿Tienes un bono regalo? Canjéalo en el último paso de la compra.</p>
+
+      <!-- Canjear un bono regalo (Turitop) -->
+      <div class="cta-band__gift">
+        <span>¿Tienes un bono regalo?</span>
+        <h1 id="redeemgv" style="text-align:center;" data-lang="es" data-embed="redeemgv" data-service=" " data-category=" " data-version=" " data-datepickeravailability=" " data-servicename=" ">Canjear bono regalo</h1>
+      </div>
     </div>
   </section>
 
@@ -252,5 +257,8 @@
   </a>
 
   <script src="main.js"></script>
+
+  <!-- Turitop: cargador del widget (codigo oficial, una sola vez en el footer) -->
+  <script id="js-turitop" src="https://app.turitop.com/js/load-turitop.min.js" data-company="S1143" data-buttoncolor="green" data-afftag="ttafid"></script>
 </body>
 </html>

@@ -189,11 +189,16 @@
     <div class="container">
       <h2>Buy your tickets</h2>
       <p>Book online quickly and securely and live the adventure at Sunview Park.</p>
-      <div class="cta-band__actions">
-        <a href="https://app.turitop.com/booking/daily/S1143/en/allproductlist" target="_blank" rel="noopener" class="btn btn--ticket btn--lg">Buy tickets online ↗</a>
-        <a href="https://app.turitop.com/booking/daily/S1143/en/allproductlist" target="_blank" rel="noopener" class="btn btn--outline btn--lg">Redeem gift voucher ↗</a>
+      <!-- Turitop ticket booking calendar · service P1 (Parque aventuras) -->
+      <div class="turitop-box">
+        <div class="load-turitop" data-service="P1" data-lang="en" data-embed="box"></div>
       </div>
-      <p style="margin-top:20px;font-size:0.9rem;opacity:0.85;">Secure bookings powered by Turitop. Got a gift voucher? Redeem it at the last step of checkout.</p>
+
+      <!-- Redeem a gift voucher (Turitop) -->
+      <div class="cta-band__gift">
+        <span>Got a gift voucher?</span>
+        <h1 id="redeemgv" style="text-align:center;" data-lang="en" data-embed="redeemgv" data-service=" " data-category=" " data-version=" " data-datepickeravailability=" " data-servicename=" ">Redeem gift voucher</h1>
+      </div>
     </div>
   </section>
 
@@ -252,5 +257,8 @@
   </a>
 
   <script src="../main.js"></script>
+
+  <!-- Turitop: cargador del widget (codigo oficial, una sola vez en el footer) -->
+  <script id="js-turitop" src="https://app.turitop.com/js/load-turitop.min.js" data-company="S1143" data-buttoncolor="green" data-afftag="ttafid"></script>
 </body>
 </html>
