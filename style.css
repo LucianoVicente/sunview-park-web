@@ -317,6 +317,13 @@ ul { list-style: none; }
 .hero--activities .hero__content p {
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
 }
+/* En móvil: acercar y recortar para que se vean bien los 2 de la tirolina */
+@media (max-width: 600px) {
+  .hero--activities {
+    background-size: auto 150%;
+    background-position: 35% 20%;
+  }
+}
 
 .hero__content {
   position: relative;
