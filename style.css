@@ -879,7 +879,7 @@ ul { list-style: none; }
     overflow-y: auto;
   }
   .navbar__links.is-open { transform: translateY(0); }
-  .navbar__links a { padding: 14px 12px; border-radius: 10px; }
+  .navbar__links a { display: block; padding: 14px 12px; border-radius: 10px; }
   .navbar__cta { margin: 10px 0 0; }
   .navbar__cta .btn { width: 100%; }
   /* Selector de idioma centrado y separado dentro del menú móvil */
