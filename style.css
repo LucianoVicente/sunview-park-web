@@ -955,7 +955,85 @@ ul { list-style: none; }
   transform: translateY(0);
 }
 
+/* ============ 14. MEJORAS VISUALES (entrada hero · cifras · fotos · CTA) ============ */
+
+/* --- 1. Entrada cinematográfica del hero (solo inicio) --- */
+.hero--home { overflow: hidden; }
+.hero::before { z-index: 1; }
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center 72%;
+  background-repeat: no-repeat;
+}
+.hero--home .hero__bg {
+  background-image: url('images/tirolina-atardecer.jpg');
+  transform: scale(1);
+  animation: heroZoom 4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  will-change: transform;
+}
+@keyframes heroZoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.06); }
+}
+.hero--home .hero__content > * {
+  opacity: 0;
+  animation: heroRise 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.hero--home .hero__content > h1 { animation-delay: 0.15s; }
+.hero--home .hero__content > p { animation-delay: 0.32s; }
+.hero--home .hero__content > .hero__actions { animation-delay: 0.5s; }
+.hero--home .hero__content > .hero__stats { animation-delay: 0.66s; }
+@keyframes heroRise {
+  from { opacity: 0; transform: translateY(26px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* --- 3. Fotos de actividades que "aterrizan" al entrar en pantalla --- */
+@keyframes cardImgSettle {
+  from { transform: scale(1.06); }
+  to   { transform: scale(1); }
+}
+.card.reveal.is-visible .card__media:not(.card__media--photo) img {
+  animation: cardImgSettle 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card__media:not(.card__media--photo)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 39, 66, 0.5) 0%, rgba(15, 39, 66, 0) 42%);
+  pointer-events: none;
+  z-index: 1;
+}
+.card__tag { z-index: 2; }
+
+/* --- 4. CTA principal: destello dorado + elevación --- */
+.btn--ticket { position: relative; overflow: hidden; }
+.btn--ticket::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.5) 50%, transparent 100%);
+  transform: skewX(-18deg);
+  pointer-events: none;
+}
+.btn--ticket:hover::after { animation: btnSheen 0.7s ease; }
+@keyframes btnSheen {
+  from { left: -120%; }
+  to   { left: 130%; }
+}
+.btn--ticket:hover { box-shadow: 0 12px 30px rgba(244, 165, 44, 0.55); }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
+  .hero--home .hero__bg { animation: none; transform: none; }
+  .hero--home .hero__content > * { animation: none; opacity: 1; transform: none; }
+  .card.reveal.is-visible .card__media:not(.card__media--photo) img { animation: none; }
+  .btn--ticket:hover::after { animation: none; }
 }

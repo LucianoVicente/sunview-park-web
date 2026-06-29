@@ -96,4 +96,28 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  /* ---------- 6. Contador animado de las cifras del hero ---------- */
+  const counters = document.querySelectorAll('[data-count]');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (counters.length && !prefersReduced) {
+    const locale = (document.documentElement.lang || 'es').toLowerCase().indexOf('en') === 0 ? 'en-GB' : 'es-ES';
+    counters.forEach(function (el) {
+      const target = parseInt(el.dataset.count, 10);
+      const suffix = el.dataset.suffix || '';
+      if (isNaN(target)) return;
+      el.textContent = '0' + suffix;
+      const duration = 1300;
+      let startTime = null;
+      const run = function (now) {
+        if (startTime === null) startTime = now;
+        const t = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = Math.round(target * eased).toLocaleString(locale) + suffix;
+        if (t < 1) { requestAnimationFrame(run); }
+        else { el.textContent = target.toLocaleString(locale) + suffix; }
+      };
+      setTimeout(function () { requestAnimationFrame(run); }, 600);
+    });
+  }
+
 });
