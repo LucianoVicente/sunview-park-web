@@ -476,6 +476,13 @@ ul { list-style: none; }
 /* Packs combinados: muestra la foto cuadrada completa (sin recortar) */
 .card__media--photo { height: auto; }
 .card__media--photo img { height: auto; }
+.card:hover .card__media--photo img { transform: none; }
+
+/* Packs combinados: la foto es lo principal, texto mas compacto */
+.cards--packs .card__body { padding: 18px; }
+.cards--packs .card__body h3 { font-size: 1.05rem; margin-bottom: 6px; }
+.cards--packs .card__price { font-size: 1.3rem; margin: 2px 0 8px; }
+.cards--packs .card__body p { font-size: 0.85rem; margin-bottom: 12px; }
 
 /* Placeholder visual cuando no hay foto */
 .card__media--placeholder {
