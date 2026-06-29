@@ -473,6 +473,10 @@ ul { list-style: none; }
 }
 .card:hover .card__media img { transform: scale(1.07); }
 
+/* Packs combinados: muestra la foto cuadrada completa (sin recortar) */
+.card__media--photo { height: auto; }
+.card__media--photo img { height: auto; }
+
 /* Placeholder visual cuando no hay foto */
 .card__media--placeholder {
   display: flex;
