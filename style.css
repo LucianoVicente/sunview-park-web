@@ -934,14 +934,21 @@ ul { list-style: none; }
   /* Botones grandes un poco más contenidos */
   .btn--lg { padding: 15px 26px; font-size: 1.05rem; }
 
-  /* Hero móvil: imagen completa con las dos personas, sin recorte ni zoom */
-  .hero--home {
-    background-image: none;
-    background-color: #0f2742;
+  /* Hero móvil: foto más grande con las dos personas; el fondo se rellena con
+     la misma foto desenfocada (sin franjas de color) */
+  .hero--home { background-image: none; background-color: transparent; }
+  .hero__blur {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: url('images/tirolina-atardecer.jpg') center center / cover no-repeat;
+    transform: scale(1.15);
+    filter: blur(16px) brightness(0.6);
   }
   .hero--home .hero__bg {
     background-image: url('images/tirolina-atardecer.jpg');
-    background-size: contain;
+    background-size: 122%;
     background-position: center center;
     animation: none;
     transform: none;
@@ -975,6 +982,7 @@ ul { list-style: none; }
   background-position: center 72%;
   background-repeat: no-repeat;
 }
+.hero__blur { display: none; }
 .hero--home .hero__bg {
   background-image: url('images/tirolina-atardecer.jpg');
   transform: scale(1);
