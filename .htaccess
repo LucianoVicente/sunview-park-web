@@ -1,0 +1,61 @@
+# ============================================================
+#  Sunview Park — .htaccess para IONOS / Apache
+#  (GitHub Pages ignora este archivo; solo actúa en IONOS)
+#  Redirecciones 301 de la web antigua (WordPress) a la nueva
+# ============================================================
+
+Options -Indexes
+
+# --- 1. Forzar HTTPS y dominio canónico SIN www ---
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.sunviewpark\.com [NC]
+RewriteRule ^(.*)$ https://sunviewpark.com/$1 [R=301,L]
+
+# --- 2. Páginas principales (URL antigua -> nueva) ---
+RedirectMatch 301 ^/actividades/?$                                /actividades.html
+RedirectMatch 301 ^/actividades-2/?$                              /actividades.html
+RedirectMatch 301 ^/activities/?$                                 /en/activities.html
+RedirectMatch 301 ^/contacto/?$                                   /contacto.html
+RedirectMatch 301 ^/contacto-2/?$                                 /contacto.html
+RedirectMatch 301 ^/contact/?$                                    /en/contact.html
+RedirectMatch 301 ^/comprar-entrada-tirolina/?$                   /
+RedirectMatch 301 ^/nueva-comprar-entradas/?$                     /
+RedirectMatch 301 ^/buy-tickets/?$                                /en/
+RedirectMatch 301 ^/tirolina/?$                                   /actividades.html
+RedirectMatch 301 ^/tirolina-malaga/?$                            /actividades.html
+RedirectMatch 301 ^/tirolina-sunview-park/?$                      /actividades.html
+RedirectMatch 301 ^/tiro-con-arco-alhaurin-de-la-torre-malaga/?$  /actividades.html
+RedirectMatch 301 ^/paseo-a-caballo/?$                            /actividades.html
+RedirectMatch 301 ^/package-deal/?$                               /packs.html
+RedirectMatch 301 ^/promociones-especiales/?$                     /packs.html
+RedirectMatch 301 ^/grupos-y-eventos-para-empresas/?$             /eventos.html
+RedirectMatch 301 ^/colegios-e-institutos/?$                      /eventos.html
+
+# --- 3. Páginas legales (1:1) ---
+RedirectMatch 301 ^/aviso-legal/?$              /aviso-legal.html
+RedirectMatch 301 ^/politica-de-privacidad/?$   /politica-de-privacidad.html
+RedirectMatch 301 ^/politica-de-cookies/?$      /politica-de-cookies.html
+RedirectMatch 301 ^/terminos-y-condiciones/?$   /terminos-y-condiciones.html
+
+# --- 4. Páginas sin equivalente -> la más cercana / inicio ---
+RedirectMatch 301 ^/terraza-bar/?$                               /
+RedirectMatch 301 ^/terraza-bar-la-tirolina-de-alhaurin/?$       /
+RedirectMatch 301 ^/restaurante/?$                               /
+RedirectMatch 301 ^/menu-restaurante/?$                          /
+RedirectMatch 301 ^/tour-360/?$                                  /actividades.html
+RedirectMatch 301 ^/conoce-la-finca-cerro-de-las-cuevas/?$       /
+RedirectMatch 301 ^/noticias-sunviewpark/?$                      /eventos.html
+RedirectMatch 301 ^/sunview/?$                                   /
+RedirectMatch 301 ^/cluedo-en-vivo/?$                            /eventos.html
+RedirectMatch 301 ^/candado-tirolina/?$                          /actividades.html
+RedirectMatch 301 ^/ig/?$                                        https://www.instagram.com/sunviewparkadventure
+
+# --- 5. Posts de eventos antiguos (2021) -> Eventos ---
+RedirectMatch 301 ^/(cata-de-maridaje|concierto-maria-esther|la-noche-en-blanco|exposicion-vicente|observacion-de-las-perseidas|swing-en-la-montana|charla-observacion|concurso-en-instagram|sorteo-en-instagram|taller-intensivo|ruta-de-quesos|fiesta-|sunview-fashion-week|carrera-de-san-silvestre|jornada-gastronomica|hello-world).*$  /eventos.html
+
+# --- 6. Bases legales de concursos antiguos -> inicio ---
+RedirectMatch 301 ^/bases-legales-.*$           /
+
+# --- 7. Categorías del blog -> Eventos ---
+RedirectMatch 301 ^/category/.*$                /eventos.html
