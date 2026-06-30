@@ -120,29 +120,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ---------- 7. Tirolinas que descienden por el cable al hacer scroll (solo inicio) ---------- */
-  const riderL = document.querySelector('.hero__rider--l');
-  const riderR = document.querySelector('.hero__rider--r');
-  const heroHome = document.querySelector('.hero--home');
-  if (riderL && riderR && heroHome && !prefersReduced && window.innerWidth > 600) {
-    const maxDown = 64;        // px que descienden como máximo
-    const slope = 0.647;       // ángulo del cable (dx por cada dy)
-    let ticking = false;
-    const apply = function () {
-      const rect = heroHome.getBoundingClientRect();
-      const h = rect.height || 1;
-      let p = -rect.top / h;                       // 0 arriba del todo, 1 al salir el hero
-      if (p < 0) { p = 0; } else if (p > 1) { p = 1; }
-      const dy = p * maxDown;
-      const dx = slope * dy;
-      riderL.style.transform = 'translate(' + (-dx).toFixed(1) + 'px,' + dy.toFixed(1) + 'px)';
-      riderR.style.transform = 'translate(' + dx.toFixed(1) + 'px,' + dy.toFixed(1) + 'px)';
-      ticking = false;
-    };
-    const onScrollR = function () { if (!ticking) { window.requestAnimationFrame(apply); ticking = true; } };
-    window.addEventListener('scroll', onScrollR, { passive: true });
-    window.addEventListener('resize', onScrollR, { passive: true });
-    apply();
-  }
-
 });
