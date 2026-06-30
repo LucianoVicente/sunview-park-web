@@ -934,10 +934,17 @@ ul { list-style: none; }
   /* Botones grandes un poco más contenidos */
   .btn--lg { padding: 15px 26px; font-size: 1.05rem; }
 
-  /* En móvil usamos un recorte vertical centrado en la persona + el valle */
+  /* Hero móvil: imagen completa con las dos personas, sin recorte ni zoom */
   .hero--home {
-    background-image: url('images/hero-movil.jpg');
+    background-image: none;
+    background-color: #0f2742;
+  }
+  .hero--home .hero__bg {
+    background-image: url('images/tirolina-atardecer.jpg');
+    background-size: contain;
     background-position: center center;
+    animation: none;
+    transform: none;
   }
 
   /* Evita títulos demasiado grandes pegados a los bordes */
