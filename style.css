@@ -934,24 +934,31 @@ ul { list-style: none; }
   /* Botones grandes un poco más contenidos */
   .btn--lg { padding: 15px 26px; font-size: 1.05rem; }
 
-  /* Hero móvil: foto más grande con las dos personas; el fondo se rellena con
-     la misma foto desenfocada (sin franjas de color) */
-  .hero--home { background-image: none; background-color: transparent; }
-  .hero__blur {
+  /* Hero móvil: la foto va como banner completo arriba (se ven las dos personas,
+     sin recorte ni franjas) y el texto debajo, sobre fondo de marca */
+  .hero--home {
     display: block;
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    background: url('images/tirolina-atardecer.jpg') center center / cover no-repeat;
-    transform: scale(1.15);
-    filter: blur(16px) brightness(0.6);
+    min-height: 0;
+    padding: var(--nav-h) 0 0;
+    background: var(--color-navy-deep);
+    text-align: center;
   }
+  .hero--home::before { display: none; }
   .hero--home .hero__bg {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    aspect-ratio: 2048 / 1380;
     background-image: url('images/tirolina-atardecer.jpg');
-    background-size: 122%;
-    background-position: center center;
+    background-size: cover;
+    background-position: center;
     animation: none;
     transform: none;
+    z-index: auto;
+  }
+  .hero__content {
+    max-width: 100%;
+    padding: 30px 18px 24px;
   }
 
   /* Evita títulos demasiado grandes pegados a los bordes */
@@ -982,7 +989,6 @@ ul { list-style: none; }
   background-position: center 72%;
   background-repeat: no-repeat;
 }
-.hero__blur { display: none; }
 .hero--home .hero__bg {
   background-image: url('images/tirolina-atardecer.jpg');
   transform: scale(1);
