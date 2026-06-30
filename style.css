@@ -308,7 +308,7 @@ ul { list-style: none; }
    Velo aún más ligero y degradado solo al pie (donde van datos y botones). */
 .hero--home {
   /* Ruta relativa a este CSS (raíz), válida también para las páginas de /en/ */
-  background-image: url('images/tirolina-atardecer.jpg');
+  background-image: url('images/hero-plate.jpg');
   background-position: center 72%;
 }
 .hero--home::before {
@@ -939,6 +939,8 @@ ul { list-style: none; }
     background-image: url('images/hero-movil.jpg');
     background-position: center center;
   }
+  /* El efecto de tirolinas con scroll es solo de escritorio */
+  .hero__photo { display: none; }
 
   /* Evita títulos demasiado grandes pegados a los bordes */
   .section-head h2 { font-size: clamp(1.6rem, 7vw, 2.1rem); }
@@ -960,23 +962,25 @@ ul { list-style: none; }
 /* --- 1. Entrada cinematográfica del hero (solo inicio) --- */
 .hero--home { overflow: hidden; }
 .hero::before { z-index: 1; }
-.hero__bg {
+.hero__photo { position: absolute; inset: 0; z-index: 0; }
+.hero__layer {
   position: absolute;
   inset: 0;
-  z-index: 0;
   background-size: cover;
   background-position: center 72%;
   background-repeat: no-repeat;
 }
-.hero--home .hero__bg {
-  background-image: url('images/tirolina-atardecer.jpg');
+.hero--home .hero__bg { background-image: url('images/hero-plate.jpg'); }
+.hero--home .hero__rider--l { background-image: url('images/hero-rider-l.png'); will-change: transform; }
+.hero--home .hero__rider--r { background-image: url('images/hero-rider-r.png'); will-change: transform; }
+.hero--home .hero__photo {
   transform: scale(1);
   animation: heroZoom 4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   will-change: transform;
 }
 @keyframes heroZoom {
   from { transform: scale(1); }
-  to   { transform: scale(1.06); }
+  to   { transform: scale(1.04); }
 }
 .hero--home .hero__content > * {
   opacity: 0;
@@ -1032,7 +1036,8 @@ ul { list-style: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
-  .hero--home .hero__bg { animation: none; transform: none; }
+  .hero--home .hero__photo { animation: none; transform: none; }
+  .hero--home .hero__rider--l, .hero--home .hero__rider--r { transform: none; }
   .hero--home .hero__content > * { animation: none; opacity: 1; transform: none; }
   .card.reveal.is-visible .card__media:not(.card__media--photo) img { animation: none; }
   .btn--ticket:hover::after { animation: none; }
