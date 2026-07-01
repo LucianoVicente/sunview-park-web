@@ -308,7 +308,7 @@ ul { list-style: none; }
    Velo aún más ligero y degradado solo al pie (donde van datos y botones). */
 .hero--home {
   /* Ruta relativa a este CSS (raíz), válida también para las páginas de /en/ */
-  background-image: url('images/tirolina-atardecer.jpg');
+  background-image: url('images/header-atardecer.jpg');
   background-position: center 72%;
 }
 .hero--home::before {
@@ -948,8 +948,8 @@ ul { list-style: none; }
     position: relative;
     inset: auto;
     width: 100%;
-    aspect-ratio: 2048 / 1380;
-    background-image: url('images/tirolina-atardecer.jpg');
+    aspect-ratio: 3 / 2;
+    background-image: url('images/header-atardecer.jpg');
     background-size: cover;
     background-position: center;
     animation: none;
@@ -1032,7 +1032,7 @@ ul { list-style: none; }
 }
 .hero__banner { display: none; }
 .hero--home .hero__bg {
-  background-image: url('images/tirolina-atardecer.jpg');
+  background-image: url('images/header-atardecer.jpg');
   transform: scale(1);
   animation: heroZoom 4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   will-change: transform;
